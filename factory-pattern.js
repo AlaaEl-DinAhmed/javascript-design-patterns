@@ -18,14 +18,6 @@ class PersonFactory {
   }
 }
 
-class Teacher extends Person {
-  constructor(fname, lname, age, job, id) {
-    super(fname, lname, age);
-    this.job = job;
-    this.id = id;
-  }
-}
-
 const personFactory = new PersonFactory();
 
 const developer = personFactory.createPerson("developer");
